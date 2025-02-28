@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <script>$.datepicker.setDefaults($.datepicker.regional['ru']);</script>
+</head>
+<body>
+<div class="date-picker">
+    <p>
+        <span class="date-label">Сегодняшняя дата: </span><span class="today-date"></span> |
+        <span class="date-label">Выбранная дата: </span><span class="selected-date">-</span>
+    </p>
+
+    <div>
+        <div id="date-picker"></div>
+        <div class="list-events-container">
+            <p class="info-text">Список событий на <span class="selected-date">-</span></p>
+            <div class="list-events"></div>
+        </div>
+    </div>
+</div>
+
+<div class="event-form">
+    <p class="info-text">Создать событие на <span class="selected-date">-</span></p>
+    <label for="event-name">Название события: </label>
+    <div></div>
+    <input type="text" id="event-name">
+    <div></div>
+    <label for="event-description">Описание события:</label>
+    <div></div>
+    <textarea id="event-description"></textarea>
+    <div></div>
+    <span id="add-event"> Добавить событие</span>
+</div>
+</body>
+</html>
